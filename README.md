@@ -1,2 +1,2 @@
-# Web-Development_FIAP
-Exercícios e trabalhos de Web Development na FIAP.
+# Javascript_FIAP
+Repositório de exercicios de Javascript na FIAP
