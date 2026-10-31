@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint_2</title>
+    <script src="checkpoint_2_Placar_de_jogo.js"></script>
+    <style>
+        body {
+            display: flex;
+            background-color: #5C3D2E;
+            font-family: Arial, sans-serif;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .jogoPlacar {
+            background-color: #F5EDE3;
+            padding: 24px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #5C3D2E;
+        }
+
+        #pontuacao {
+            margin: 0 0 20px;
+            padding: 16px;
+            text-align: center;
+            font-size: 56px;
+            font-weight: bold;
+            color: #5C3D2E;
+            background-color: #FFFFFF;
+            border: 1px solid #B08968;
+            border-radius: 6px;
+        }
+
+        .botoes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #8B5E3C;
+            color: #FFFFFF;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6F4A2F;
+        }
+    </style>
+</head>
+<body>
+    <div class="jogoPlacar">
+        <h2>Placar do Jogo</h2>
+        <p id="pontuacao">0</p>
+
+        <div class="botoes">
+            <button onclick="adicionarPonto()">Adicionar o ponto</button>
+            <button onclick="removerPonto()">Remover o ponto</button>
+        </div>
+    </div>
+    
+</body>
+</html>

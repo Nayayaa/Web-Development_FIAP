@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint_1</title>
+    <script src="checkpoint_1_Calculadora.js"></script>
+    <style>
+        body {
+            display: flex;
+            background-color: #5C3D2E;
+            font-family: Arial, sans-serif;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .calculadora {
+            background-color: #F5EDE3;
+            padding: 24px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #5C3D2E;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #B08968;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .botao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #8B5E3C;
+            color: #FFFFFF;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6F4A2F;
+        }
+
+        #resultado {
+            margin-bottom: 0;
+            text-align: center;
+            font-weight: bold;
+            color: #5C3D2E;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Calculadora Simples</h2>
+
+        <input type="number" id="Preco" placeholder="Preço unitário:">
+        <input type="number" id="Quantidade" placeholder="Quantidade:">
+
+        <div class="botao">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <p id="resultado"></p>
+    </div>
+
+    
+</body>
+</html>
